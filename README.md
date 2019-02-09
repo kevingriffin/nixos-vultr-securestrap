@@ -1,14 +1,16 @@
-Bootstraps a vultr server with nixos
+Bootstraps a vultr server with nixos with LUKS root encryption
 
-Be sure to replace the public key with your own when you fork this
-
+- **Replace public key with your own in configuration.nix**
+- **Replace LUKS password with your own in bootstrap.sh**
 
 ```
 nix-env -iA nixos.gitMinimal
 
-git clone https://github.com/arianvp/nixos-vultr-bootstrap
+git clone https://github.com/seqizz/nixos-vultr-securestrap
 
-cd nixos-vultr-bootstrap
+cd nixos-vultr-securestrap
+
 ./bootstrap.sh
+
 reboot
 ```

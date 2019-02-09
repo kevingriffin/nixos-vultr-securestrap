@@ -5,6 +5,7 @@
     [
         <nixpkgs/nixos/modules/profiles/minimal.nix>
         ./hardware-configuration.nix
+        ./luks-configuration.nix
     ];
 
   boot.loader.grub.enable = true;
